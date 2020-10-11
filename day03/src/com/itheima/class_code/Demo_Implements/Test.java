@@ -8,6 +8,6 @@ public class Test {
 
 }
 
-class Impl implements A ,B{
+class Impl implements A, B {
 
 }

@@ -5,10 +5,16 @@ import java.util.Scanner;
 public class Staff extends Person {
 
     @Override
-    public void body() {
+    public String body() {
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入通知内容：");
-        String writ = sc.next();
-        System.out.println(writ);
+        return sc.next();
+    }
+
+    public Staff() {
+    }
+
+    public Staff(String id, String name, Integer age) {
+        super(id, name, age);
     }
 }
