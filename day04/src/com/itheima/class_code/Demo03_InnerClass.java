@@ -13,12 +13,20 @@ public class Demo03_InnerClass {
             public void eat() {
                 System.out.println("√®≥‘”„");
             }
+
+            @Override
+            public void drink() {
+                System.out.println("√®∫»ÀÆ");
+            }
         };
 
         cat.eat();
+        cat.drink();
     }
 }
 
 interface CatInter {
     void eat();
+
+    void drink();
 }

@@ -27,7 +27,7 @@ public class InfoManagerEntry {
                 case 1:
                     //StudentController studentController = new StudentController();
                     //OtherStudentController studentController = new OtherStudentController();
-                    BaseStudentController studentController = new StudentFacatory().getStudentDAO();
+                    BaseStudentController studentController = new StudentFacatory().getStudentController();
                     studentController.start();
                     break;
                 case 2:

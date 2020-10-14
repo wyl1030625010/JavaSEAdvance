@@ -5,7 +5,7 @@ import com.itheima.class_code.StudentManager_Polymorpic.controller.OtherStudentC
 import com.itheima.class_code.StudentManager_Polymorpic.controller.StudentController;
 
 public class StudentFacatory {
-    public BaseStudentController getStudentDAO(){
+    public BaseStudentController getStudentController(){
         return new OtherStudentController();
         //return new StudentController();
     }
