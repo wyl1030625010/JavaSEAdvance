@@ -10,6 +10,8 @@ public class Demo04_BigDecimal {
         BigDecimal bigDecimal2 = new BigDecimal("0.1");
         System.out.println(bigDecimal1);
 
+        BigDecimal.valueOf(10);
+
         BigDecimal add = bigDecimal1.add(bigDecimal2);
         System.out.println("+£º" + add);
 
@@ -21,6 +23,10 @@ public class Demo04_BigDecimal {
 
         BigDecimal divide = bigDecimal1.divide(bigDecimal2);
         System.out.println("/£º" + divide);
+
+        System.out.println("---------------------------------------------");
+        BigDecimal zero = BigDecimal.ONE;
+        System.out.println(zero);
 
 
     }
