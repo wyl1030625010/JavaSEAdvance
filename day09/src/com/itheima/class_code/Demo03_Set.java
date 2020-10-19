@@ -16,7 +16,6 @@ public class Demo03_Set {
         }
 
         boolean b = set.removeIf(s -> "aaa".equals(s));
-        System.out.println(b);
 
         for (String s : set) {
             System.out.println(s);
