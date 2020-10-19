@@ -6,8 +6,8 @@ import java.time.format.DateTimeFormatter;
 
 public class Demo04_jdk8Date {
     public static void main(String[] args) {
-        localTimeFormatter();
         localTimeParse();
+        localTimeFormatter();
     }
 
     private static void localTimeParse() {
