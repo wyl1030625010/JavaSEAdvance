@@ -100,7 +100,7 @@ public class StudentController {
      * 查看所有学生操作
      */
     private void findStudent() {
-        ArrayList<Student> allStudent = studentService.findAllStudent();
+        ArrayList<Student> allStudent = StudentService.findAllStudent();
 
         if (allStudent.size() == 0) {
             System.out.println("暂无学生，请先添加学生");

@@ -10,6 +10,7 @@ public class OtherTeacherController extends BaseTeacherController {
     /**
      * 用户控制
      */
+    @Override
     public Teacher input(Integer id) {
         System.out.print("请输入姓名：");
         String name = sc.next();

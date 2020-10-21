@@ -23,6 +23,7 @@ class Fu {
 class Zi extends Fu {
     int a = 20;
 
+    @Override
     public void eat() {
         System.out.println("³ÔÃæÌõ");
     }

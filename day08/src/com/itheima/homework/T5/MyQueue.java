@@ -30,6 +30,7 @@ public class MyQueue<T> {
         return first;
     }
 
+    @Override
     public String toString() {
         return "MyQueue" + linkedList;
     }

@@ -10,6 +10,7 @@ public class StudentController extends BaseStudentController {
     /**
      * 用户输入
      */
+    @Override
     public Student input(Integer id) {
         System.out.print("请输入姓名：");
         String name = sc.next();

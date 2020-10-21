@@ -18,7 +18,7 @@ public class StudentDAO implements BaseStudentDAO {
      *
      * @param stu 新添加的学生对象
      */
-
+    @Override
     public boolean addStudent(Student stu) {
         return list.add(stu);
     }
@@ -26,6 +26,7 @@ public class StudentDAO implements BaseStudentDAO {
     /**
      * 查询所有学生
      */
+    @Override
     public ArrayList<Student> findAllStudent() {
         return list;
     }
@@ -35,6 +36,7 @@ public class StudentDAO implements BaseStudentDAO {
      *
      * @param id 删除的id
      */
+    @Override
     public boolean delStudent(Integer id) {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getId().equals(id)) {
@@ -47,6 +49,7 @@ public class StudentDAO implements BaseStudentDAO {
     /**
      * 修改该id的对象属性
      */
+    @Override
     public boolean editStudent(Student newStu) {
         for (Student stu : list) {
             if (stu.getId().equals(newStu.getId())) {

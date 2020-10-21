@@ -11,16 +11,19 @@ public class T3 {
         });//请用匿名内部类的形式调用
     }
 
+
     public static void fun(Animal a) {
         a.show();
     }
 }
+
 
 interface Animal {
     public void show();
 }
 
 class Cat implements Animal {
+    @Override
     public void show() {
         System.out.println("猫");
     }

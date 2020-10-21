@@ -94,7 +94,7 @@ public class BaseTeacherController {
      * 查看所有老师操作
      */
     private void findTeacher() {
-        ArrayList<Teacher> allTeacher = teacherService.findAllTeacher();
+        ArrayList<Teacher> allTeacher = TeacherService.findAllTeacher();
         if (allTeacher.size() == 0) {
             System.out.println("暂无老师，请先添加老师");
         } else {

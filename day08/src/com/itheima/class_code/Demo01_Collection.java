@@ -19,7 +19,7 @@ public class Demo01_Collection {
         //根据内容删除
         collection.remove("aaa");
         //根据条件删除
-        collection.removeIf(s -> s.equals("dddd"));
+        collection.removeIf(s -> "dddd".equals(s));
 
         System.out.println(collection.contains("bbb"));
 

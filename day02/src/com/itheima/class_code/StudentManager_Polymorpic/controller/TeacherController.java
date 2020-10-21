@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class TeacherController extends BaseTeacherController {
     Scanner sc = new Scanner(System.in);
 
+    @Override
     public Teacher input(Integer id) {
         System.out.print("ÇëÊäÈëĞÕÃû£º");
         String name = sc.next();
