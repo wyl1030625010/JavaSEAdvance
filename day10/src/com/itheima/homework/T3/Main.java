@@ -31,20 +31,19 @@ import java.util.TreeMap;
  */
 public class Main {
     public static void main(String[] args) {
-        TreeMap<ModelOfLabor, String> treeMap = new TreeMap<>((mol1, mol2) -> {
-            return mol2.getAge() - mol1.getAge();
-        });
+        TreeMap<ModelOfLabor, String> treeMap = new TreeMap<>((mol1, mol2) -> mol2.getAge() - mol1.getAge());
         {
-            treeMap.put(new ModelOfLabor("张三", 18), "北京");
             treeMap.put(new ModelOfLabor("李四", 20), "上海");
             treeMap.put(new ModelOfLabor("王五", 35), "天津");
             treeMap.put(new ModelOfLabor("赵六", 21), "北京");
             treeMap.put(new ModelOfLabor("田七", 19), "上海");
+            treeMap.put(new ModelOfLabor("张三", 18), "北京");
         }
+
         Set<ModelOfLabor> keySet = treeMap.keySet();
         for (ModelOfLabor mol : keySet) {
-            if ("张三".equals(mol.getName())) {
-                treeMap.remove(mol);
+            if ("王五".equals(mol.getName())) {
+                System.out.println(treeMap.remove(mol));
             }
 
             if ("李四".equals(mol.getName())) {
